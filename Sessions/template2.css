@@ -1,0 +1,176 @@
+
+html
+{
+  height: 100%;
+  width: 100%;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(#D0D0D0, #F0F0F0);
+	background-attachment: fixed;
+	background-color: #F0F0F0;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.column-100
+{
+	width: 100%;
+}
+		 
+.center
+{
+	left:50%;
+	transform: translate(-50%,0);
+	position: relative;
+	display: block;
+}
+
+
+div.box-user
+{
+	margin-bottom: 10px;
+	width: 120px;
+	text-align: center;
+	min-height: 85px;
+}
+
+
+.panel
+{
+	position: relative;
+	display: block;
+	text-align: center; background-color: #B0C9E0; border-radius: 8px; padding: 6px; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+
+
+
+[class^="btdrop-face"] 
+{	
+	transition-duration: 0.4s;
+	float: left;
+	background-image: linear-gradient(#447766, #AAEECC);
+	color: #E9E9E9; 
+	border: 1px solid #777777;
+	text-shadow:0px 0px 5px black, 0px 0px 3px black, 1px 1px 3px black;
+	cursor: pointer;
+	border-radius: 8px;
+	height: 35px;
+	width: auto;
+	font-size: 16px;
+	font-family: 'Oxanium', cursive;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	padding: 6px;
+	display: inline-block;
+	z-index: 1;
+}
+
+
+
+
+[class^="input-dropdown"]
+{
+	display: none;
+}
+
+[class^="options-dropdown"]
+{
+	display: none;
+}
+
+
+[class^="input-dropdown"]:checked ~  [class^="options-dropdown"] {
+	display: block;
+}
+
+
+[class^="btdrop-face"]:hover
+{	
+	background-image: linear-gradient(#559977, #EEFFF0);
+	color: #F9F9F9;
+}
+
+
+
+.image-background
+{
+	/* The following svg path code is provided by Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+		License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+		No changes were made.
+	*/
+	background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z' fill='%23777777'/%3E%3C/svg%3E" )
+					,linear-gradient(#447766, #AAEECC);	
+	background-position: center, center;
+	background-repeat: no-repeat, repeat;
+     background-size: 45px 75px, auto;
+	
+}
+
+.image-background:hover
+{
+	/* The following svg path code is provided by Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+		License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+		No changes were made.
+	*/	
+	background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z' fill='%23999999'/%3E%3C/svg%3E" )	
+						,linear-gradient(#559977, #EEFFF0);	
+	background-position: center, center;
+	background-repeat: no-repeat, repeat;
+     background-size: 45px 75px, auto;
+	
+}
+
+
+.input-dropdown-account:checked ~ .btdrop-account .btdrop-face-account {
+	/* The following svg path code is provided by Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+		License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+		No changes were made.
+	*/	
+	background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z' fill='%23999999'/%3E%3C/svg%3E" )	
+						,linear-gradient(#559977, #EEFFF0);	
+	background-position: center, center;
+	background-repeat: no-repeat, repeat;
+     background-size: 45px 75px, auto;
+}
+
+a.button-menu-account {
+	display: block;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 180px;
+	height: 36px;
+	padding: 6px 6px;
+	font-size: 16px;
+	font-family: 'Oxanium', cursive;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow:0px 0px 10px #000000;
+	text-shadow:0px 0px 5px black, 0px 0px 3px black, 1px 1px 3px black;
+	background-color: #77B099;
+	color: #E9E9E9; 
+	border-bottom: 1px solid #777777;
+	z-index: 300;
+	border-radius: 8px;
+}
+
+a.button-menu-account:hover {
+	background-color: #99DDBB;
+	color: #F9F9F9;
+}
